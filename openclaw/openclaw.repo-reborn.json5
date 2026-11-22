@@ -1,0 +1,22 @@
+// Merge this into ~/.openclaw/openclaw.json (JSON5).
+// It turns on the OpenAI style HTTP endpoint so Repo Reborn runs every agent call through OpenClaw.
+{
+  gateway: {
+    port: 18789,
+    bind: "loopback",
+    auth: {
+      mode: "token",
+      token: "PUT-A-LONG-RANDOM-TOKEN-HERE", // same value as OPENCLAW_GATEWAY_TOKEN in Repo Reborn .env
+    },
+    http: {
+      endpoints: {
+        chatCompletions: { enabled: true },
+      },
+    },
+  },
+  agents: {
+    defaults: {
+      model: { primary: "cerebras/moonshotai-kimi-k3.1-pro-trial" },
+    },
+  },
+}
