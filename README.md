@@ -15,6 +15,17 @@ Paste a GitHub link. Scout maps the repo. Maestro writes the plan. Many worker a
 | All | Build agents | Multi agent orchestration with a live swarm board |
 | TPS Lab | Speed | Finds the prompt with the fastest tokens per second |
 
+## Screenshots
+
+| | |
+| --- | --- |
+| ![Landing page](docs/screenshots/landing.jpg) | ![Start a swarm](docs/screenshots/start-swarm.jpg) |
+| Landing page | Pick a repo, a mode and a credit saver profile |
+| ![Swarm board](docs/screenshots/swarm-board.jpg) | ![Before and after](docs/screenshots/before-after.jpg) |
+| Live swarm board with agents and tokens per second | Before and after view of a rewritten file |
+| ![Ship a pull request](docs/screenshots/ship-pr.jpg) | ![OpenClaw settings](docs/screenshots/settings-openclaw.jpg) |
+| Ship tab opens the pull request | Settings show the OpenClaw harness and Cerebras |
+
 ## Architecture
 
 ```mermaid
